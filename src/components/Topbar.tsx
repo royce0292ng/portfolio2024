@@ -12,7 +12,7 @@ const Topbar = () => {
       <NavbarBrand>
         <Link href="/" color="foreground" className=" transition hover:scale-150">
             {/* <Image src="/next.svg" alt="logo" width={74} height={29}/> */}
-            <p className="font-bold text-inherit">ICON</p>
+            <p className="font-bold text-inherit">ROYCE</p>
         </Link>
       </NavbarBrand>
       <NavbarContent justify="end">
