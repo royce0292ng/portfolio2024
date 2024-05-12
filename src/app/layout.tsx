@@ -2,6 +2,7 @@ import * as React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import Providers from "./Provider";
+import { volkhov } from "@/constants/fonts";
 
 export const metadata: Metadata = {
   title: "Royce Ng",
@@ -15,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${volkhov.className }`}>
         <Providers>{children}</Providers>
       </body>
     </html>

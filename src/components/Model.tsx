@@ -11,7 +11,7 @@ import { BackSide } from 'three';
     const { viewport } = useThree()
 
     useFrame(() => {
-      mesh.current.rotation.x += 0.035
+      mesh.current.rotation.y += 0.005
     })
 
     const materialProps = useControls({
