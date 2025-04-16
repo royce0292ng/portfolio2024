@@ -1,5 +1,7 @@
+"use client"
+
 import { NAV_LINKS, NAV_MORE } from "@/constants"
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react"
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@heroui/react"
 import More from "./More"
 import { useState } from "react";
 
