@@ -1,4 +1,4 @@
-import { Inter, Roboto_Mono, Oswald, Gochi_Hand, Quicksand } from 'next/font/google'
+import {Inter, Roboto_Mono, Oswald, Gochi_Hand, Quicksand, Noto_Serif} from 'next/font/google'
  
 export const inter = Inter({
     subsets: ['latin'],
@@ -11,6 +11,11 @@ export const roboto_mono = Roboto_Mono({
 })
 
 export const oswald = Oswald({
+    subsets: ['latin'],
+    display: 'swap',
+})
+
+export const noto_serif = Noto_Serif({
     subsets: ['latin'],
     display: 'swap',
 })

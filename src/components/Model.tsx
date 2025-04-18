@@ -6,7 +6,7 @@ import { BackSide } from 'three';
  
  const Model = () => {
 
-    const mesh = useRef();
+    const mesh = useRef(undefined);
     const { nodes } = useGLTF("/models/Torus.glb")
     const { viewport } = useThree()
 

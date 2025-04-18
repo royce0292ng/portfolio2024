@@ -2,7 +2,7 @@
 
 import Footer from '@/components/Footer';
 import Topbar from '@/components/Topbar';
-import { NextUIProvider } from '@nextui-org/react';
+import { HeroUIProvider } from "@heroui/react";
 import React from 'react'
 
 export function Providers({
@@ -11,13 +11,13 @@ export function Providers({
     children: React.ReactNode;
   }>) {  
     return (
-    <NextUIProvider className='min-h-screen dark text-foreground bg-background'>
+    <HeroUIProvider className='min-h-screen dark text-foreground bg-background'>
         <Topbar/>
         <main className="relative overflow-hidden">
         {children}
         </main>
         <Footer/>
-    </NextUIProvider>
+    </HeroUIProvider>
   )
 }
 

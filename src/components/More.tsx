@@ -1,5 +1,5 @@
 import { NAV_MORE } from '@/constants'
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from '@nextui-org/react'
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@heroui/react"
 import React from 'react'
 
 const More = () => {

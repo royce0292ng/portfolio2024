@@ -1,5 +1,5 @@
 import { FOOTER_CONTACT_INFO, SOCIALS } from '@/constants'
-import { Divider } from '@nextui-org/react'
+import { Divider } from "@heroui/react"
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -51,24 +51,23 @@ type FooterColumnProps = {
 }
 
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
-    return(
+    return (
         <div className='flex flex-col gap-5'>
             <h4 className='font-bold whitespace-nowrap group'>
                 {/* Map through each character in the title */}
                 {title.split('').map((char, index) => (
                     char === ' ' ? (
                         // Render a span for space character
-                        <span key={index}>&nbsp;</span>
+                        (<span key={index}>&nbsp;</span>)
                     ) : (
                         // Render a span for non-space character with animation
-                        <span key={index} style={{ animationDelay: `${index * 0.1}s` }} className='inline-block group-hover:animate-wave'>{char}</span>
+                        (<span key={index} style={{ animationDelay: `${index * 0.1}s` }} className='inline-block group-hover:animate-wave'>{char}</span>)
                     )
                 ))}
             </h4>
-    
             {children}
         </div>
-    )
+    );
 }
 
 export default Footer

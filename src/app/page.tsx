@@ -1,18 +1,20 @@
+'use client'
+
 import { gochihand, quicksand } from "@/constants/fonts";
-import { Button, Chip, Image } from "@nextui-org/react";
+import { Button, Chip, Image } from "@heroui/react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
-const Scene = dynamic(() => import('@/components/Scene'),{
-  loading: () => <p>Loading...</p>,
-  ssr: false
-})
+// const Scene = dynamic(() => import('@/components/Scene'),{
+//   loading: () => <p>Loading...</p>,
+//   ssr: false
+// })
 
 export default function Home() {
   return (
     <>
       <div className=" h-screen ">
-        <Scene/>
+        {/*<Scene/>*/}
       </div>
       {/* Section 1 TalkHQ */}
       <div className="flex ">
